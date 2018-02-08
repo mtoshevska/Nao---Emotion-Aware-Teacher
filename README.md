@@ -5,8 +5,10 @@
 
 Robot **Nao** has the role of emotion aware teacher whose purpose is to *teach* and *entertain* his student. Nao is able to adjust his behavior to the current emotional state of his student. The target user group is children.
 
-The value for current emotional state of the student (child) is calculated as a weighted sum of 5 emotions: *neutral*, *happiness*, *surprise*, *sadness* and *anger*. It is calculated as \
-`reward = happiness ∗ 10 + neutral ∗ 5 + surprise ∗ 5 − sadness ∗ 5 − anger ∗ 10` \
+The value for current emotional state of the student (child) is calculated as a weighted sum of 5 emotions: *neutral*, *happiness*, *surprise*, *sadness* and *anger*. It is calculated as
+
+`reward = happiness ∗ 10 + neutral ∗ 5 + surprise ∗ 5 − sadness ∗ 5 − anger ∗ 10`
+
 where *neutral*, *happiness*, *surprise*, *sadness* and *anger* are probabilities that the face (i.e. student) has the corresponding emotion. These probabilities are calculated with face characteristics analysis by a module, *ALFaceCharacteristics*, already implemented on the robot.
 
 The main purpose of the robot is teaching basic math concepts. He can be in one of the three states:
